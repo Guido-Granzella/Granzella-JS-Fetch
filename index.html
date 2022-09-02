@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="sanguche, milanesa, cerveza, comida, bar ">
+    <meta name="description" content="El mejor sitio web interactivo para poder comprar comida en bares">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script defer src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script defer src="./js/javaScript.js"></script>
+    <link rel="stylesheet" href="./css/estilos.css">
+    <title>NoEatLikeAnts - Inicio</title>
+    <link rel="icon" href="./multimedia/icono.ico">
+</head>
+
+
+<body>
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            <div class="container-fluid">
+                <li class="nav-item "><a class="navbar-brand" href="#inicio"><img src="./multimedia/icono.ico"
+                            alt="NoEatLikeAnts"> </a></li>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#section1" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Menú
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#bebidas">Bebidas</a></li>
+                                <li><a class="dropdown-item" href="#comidas">Comidas</a></li>
+                                <li><a class="dropdown-item" href="#postres">Postres</a></li>
+                                <li><a class="dropdown-item" href="#salsas">Salsas</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#section2">Tarjetas y descuentos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#section3">Locales</a>
+                        </li>
+                    </ul>
+
+                    <article>
+                        <input type="text" class="xsxs" id="buscar" placeholder="Buscar">
+                        <button id="buscar" class="button button-outline-success">BUSCAR</button>
+                    </article>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+
+    <main>
+        <section class="container" id="inicio">
+            <h1>
+                NoEatLikeAnts
+            </h1>
+
+            <h4>
+                Descubrí lo mejor de la comida en bares.
+            </h4>
+
+            <p>
+                NoEatLikeAnts es un compromiso con la gente, comida de altisimo nivel, que va a explotar tus niveles
+                sensoriales, conocer los tragos y los platos con diferentes categorías dentro de geniales combos para
+                que no
+                sufra tu bolsillo a la hora de querer comer lo que te encata.
+            </p>
+
+
+
+            <article class="container">
+                <input type="text" name="nombre" class="form-control" id="name" placeholder="Ingrese su nombre">
+                <input type="number" id="mesa" class="form-control xtxt" placeholder="Ingrese su mesa">
+                <button type="button" class="button11">CLIENTE</button>
+            </article>
+
+            <article class="container">
+                <div class="button122">Resultado de busquedas</div>
+            </article>
+
+            <article class="container">
+                <button id="ML" class="button222">Mercado Libre</button>
+            </article>
+
+            <article class="carrusel">
+                <div class="container w-75">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="./multimedia/fotos bar editadas/Bodeguita-Reyes-Antonio-Romero3-685x385.jpg"
+                                    class="d-block w-100" alt="elemento_0">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./multimedia/fotos bar editadas/castizo.jpg" class="d-block w-100"
+                                    alt="elemento_1">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./multimedia/fotos bar editadas/IMG_20210512_154451740-min.jpg"
+                                    class="d-block w-100" alt="elemento_2">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="container" id="asd2">
+                <h4>
+                    Carrito
+                </h4>
+                <p class="precioTotal">TOTAL: $ <span id="totalCarrito">0</span></p>
+                <div class="container" id="asd">
+                    <div class="carrito"></div>
+                </div>
+            </article>
+
+
+        </section>
+
+
+        <section class="container-fluid" id="section1">
+            <span>
+                <h3>
+                    Menú
+                </h3>
+            </span>
+    <div class="container">
+            <article class="papita">
+                <span>
+                    <h4 id="bebidas">
+                        Bebidas
+                    </h4>
+
+                    <article class="container">
+                        <button class="button1">LISTAR BEBIDAS</button>
+                    </article>
+
+                    <div class="containerDiv"></div>
+                </span>
+                <span>
+                    <h4 id="comidas">
+                        Comidas
+                    </h4>
+
+                    <article class="container">
+                        <button class="button2">LISTAR COMIDAS</button>
+                    </article>
+
+                    <div class="containerDiv2"></div>
+                </span>
+
+                <span>
+                    <h4 id="postres">
+                        Postres
+                    </h4>
+
+                    <article class="container">
+                        <button class="button3">LISTAR POSTRES</button>
+                    </article>
+
+                    <div class="containerDiv3"></div>
+                </span>
+
+                <span>
+                    <h4 id="salsas">
+                        Salsas
+                    </h4>
+
+                    <article class="container">
+                        <button class="button4">LISTAR SALSAS</button>
+                    </article>
+                    <div class="containerDiv4"></div>
+                </span>
+        </section>
+    </div>
+        <section class="container-fluid" id="section2">
+
+            <h3>
+                Tarjetas y Descuentos
+            </h3>
+
+            <p>
+                Encontrá todas las tarjetas con las que trabajamos, pero también tenemos los mejores descuentos para
+                vos.
+            </p>
+
+            <div class="accordion accordion-flush container" id="accordionFlushExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            Tarjetas débito
+                        </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body"></div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            Tarjetas crédito
+                        </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body"></div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseThree" aria-expanded="false"
+                            aria-controls="flush-collapseThree">
+                            Descuentos
+                        </button>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse"
+                        aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body"></div>
+                    </div>
+                </div>
+            </div>
+            </article>
+
+        </section>
+
+        <section class="container-fluid" id="section3">
+            <h3>
+                Locales
+            </h3>
+
+            <p>
+                ¿Te gusta descubrir nuevos entornos? Conocé toda nuestra red de bares en la ciudad.
+            </p>
+
+            <div class="accordion accordion-flush container" id="accordionFlushExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            Local Caballito
+                        </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body"></div>
+                        <iframe class="container"
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13135.466769010265!2d-58.4457706!3d-34.6075323!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7d00b48da5073e21!2sCid%20Campeador!5e0!3m2!1ses-419!2sar!4v1660517867237!5m2!1ses-419!2sar"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            Local Palermo
+                        </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body"></div>
+                        <iframe class="container"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.8551393579673!2d-58.43837310000001!3d-34.58253179999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb592ec99b513%3A0x78c823c798f8ae0a!2sHonduras%20%26%20%C3%81ngel%20Justiniano%20Carranza%2C%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1660517934494!5m2!1ses-419!2sar"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseThree" aria-expanded="false"
+                            aria-controls="flush-collapseThree">
+                            Local Centro
+                        </button>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse"
+                        aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body"></div>
+                        <iframe class="container"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.0168878894538!2d-58.38375908423682!3d-34.60373446500705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4aa9f0a6da5edb%3A0x11bead4e234e558b!2sObelisco!5e0!3m2!1ses-419!2sar!4v1660517958482!5m2!1ses-419!2sar"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer class="container-fluid">
+        <p>
+            Copyright© Todos los derechos reservados para NoEatLikeAnts®
+        </p>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
