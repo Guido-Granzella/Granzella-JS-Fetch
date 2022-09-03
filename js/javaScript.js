@@ -372,51 +372,25 @@ const sa2 = (mensaje, fondo)=>{
 //--------------------------------fetch--------------------------------------
 
 const button222 = document.querySelector(".button222")
-button222.addEventListener("click", pedirDatosAlSRV)
-const data=[""]
+button222.addEventListener("click", obtenerValorDolar)
 
-class Data {
-    constructor(id, name) {
-        this.id = id
-        this.name = name
-    }
-}
+const URLDOLAR = "https://api-dolar-argentina.herokuapp.com/api/dolarblue";
 
-function generadorAutomaticoData() {
-    data.push(new Data(0, "INICIO"))}
-
-function pedirDatosAlSRV() {
-    fetch('https://api.mercadolibre.com/sites/MLA/categories')
-    .then((response) => response.json())
-    .then((data) => console.table(data))
-    .then(data.forEach((data) => {
-        button222.innerHTML += `<div>
-                                    <tr>
-                                        <td>${data.id}</td>
-                                        <td>$${data.name}</td>
-                                    </tr>
-                                </div>`
-    }))
-    .catch((error)=> console.error("ERROR: ", error))
-    }
-
-generadorAutomaticoData()
-
-/* 
-
-document.addEventListener(`DOMContentLoaded`, ()  =>{
-    fechtData()
-    console.log(fechtData)
+async function obtenerValorDolar() {
+    await fetch(URLDOLAR)
+.then(response => response.json())
+.then(data =>{ button222.innerHTML += `<div>
+                                            <tr>
+                                                <td>$${data.compra}</td>
+                                                <td>$${data.venta}</td>
+                                            </tr>
+                                        </div>`
 })
-
-const fechtData= async ()=>{
-try {
-    const URLJSON="/objetos.json"
-    const resp=await fetch("objetos.json")
-    const data= await resp.json()
-    productosJSON = data;
-    imprimirProductosEnHTML();
-}catch (error){
-    console.log(error)
+.catch(error=>console.log(error))
 }
-} */
+
+
+
+
+/* document.querySelector("#ML").innerHTML+=
+(`<p align="center">Dolar compra: $ ${data.compra}  Dolar venta: $ ${data.venta}</p>`) */
