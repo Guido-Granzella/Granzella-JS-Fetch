@@ -374,23 +374,18 @@ const sa2 = (mensaje, fondo)=>{
 const button222 = document.querySelector(".button222")
 button222.addEventListener("click", obtenerValorDolar)
 
-const URLDOLAR = "https://api-dolar-argentina.herokuapp.com/api/dolarblue";
+const URLDOLAR = "https://api.bluelytics.com.ar/v2/latest";
 
 async function obtenerValorDolar() {
     await fetch(URLDOLAR)
 .then(response => response.json())
-.then(data =>{ button222.innerHTML += `<div>
+.then(data =>{ button222.innerHTML = `<div>
                                             <tr>
-                                                <td>$${data.compra}</td>
-                                                <td>$${data.venta}</td>
+                                                <td>VALOR DOLAR: </td>
+                                                <td>Compra $${data.blue.value_buy}</td>
+                                                <td>Venta $${data.blue.value_sell}</td>
                                             </tr>
                                         </div>`
 })
 .catch(error=>console.log(error))
 }
-
-
-
-
-/* document.querySelector("#ML").innerHTML+=
-(`<p align="center">Dolar compra: $ ${data.compra}  Dolar venta: $ ${data.venta}</p>`) */
